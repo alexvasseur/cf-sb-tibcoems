@@ -1,0 +1,22 @@
+echo off
+connect tcp://localhost:7222 admin
+
+show user foo
+exit
+
+delete user user2
+create user user2 password=password
+grant queue sample user=user2 all
+commit
+
+echo off
+show queues sample
+
+echo on
+show queues
+create queue alex
+commit
+
+delete queue alex
+
+

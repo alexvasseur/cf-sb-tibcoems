@@ -1,0 +1,31 @@
+# This file should not be used in deployed environments. Instead, set
+# the SETTINGS_PATH environment variable to point to a configuration
+# file that contains these settings.
+
+
+services:
+- name: Tibco
+  id: 3101b971-1044-4816-a7ac-9ded2e028079
+  description: Tibco EMS service for application development and testing
+  bindable: true
+  tags:
+    - tibco
+    - jms
+  metadata:
+    provider:
+      name: Pivotal
+    listing:
+      imageUrl: http://www.finmaxtech.com/finmaxtech/images/stories/finmax/tibco.jpg
+      blurb: Tibco EMS service for application development and testing
+  plans:
+  - name: TibcoEMS
+    id: 2451fa22-df16-4c10-ba6e-1f682d3dcdc9
+    description: Tibco EMS Server, user with grant on sample queue as well as auto generated queue
+    metadata:
+      cost: 0.0
+      bullets:
+      - content: Tibco EMS server
+      - content: publish, receive, browse on sample queue
+      - content: publish, receive, browse on a user scoped queue
+      - content: no message limit on the user scoped queue
+
