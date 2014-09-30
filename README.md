@@ -1,11 +1,15 @@
 Author
 ======
-Alexandre Vasseur, Pivotal
-License: GPL
+* Alexandre Vasseur, Pivotal
+* License: GPL
 
 Introduction
 ============
 A java version of Tibco EMS broker for cloudfoundry.  It is ported from cf-mysql-broker.
+
+
+![alt tag](https://github.com/avasseur-pivotal/cf-sb-tibcoems/blob/master/tibcoEMSinPCF.png)
+
 
 How To Build and Run
 ====================
@@ -30,8 +34,11 @@ The configuration can be changed by modifying the file under `resources\applicat
 
 Tested with
 ===========
-TibcoEMS 8.0.0
-Pivotal Cloud Foundry 1.3
+* TibcoEMS 8.0.0
+* Pivotal Cloud Foundry 1.3
+
+
+
 
 Routes
 ======
